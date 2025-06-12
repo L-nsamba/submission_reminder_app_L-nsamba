@@ -116,5 +116,6 @@ echo "Granting files execution permissions..."
 find -name "*.sh" -type f -exec chmod +x {} \;
 sleep 0.5
 echo "Successfully set up reminder application system."
+./app/reminder.sh
 EOF
 
