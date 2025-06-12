@@ -2,7 +2,7 @@
 
 #Prompt for user to enter name
 read -p "Enter your name: " name
-echo "Creation of directory..."
+echo "Creating directory..."
 sleep 0.5
 
 #Creation of respective directory
@@ -103,4 +103,18 @@ DAYS_REMAINING=2
 
 EOF
 sleep 0.5
-echo "File population successfully completed."
+echo "Successfully populated the files."
+
+#Implementing the startup script
+chmod +x startup.sh
+cat > startup.sh << 'EOF'
+#!/bin/bash
+sleep 0.5
+echo "Setting up the reminder application system..."
+sleep 0.5
+echo "Granting files execution permissions..."
+find -name "*.sh" -type f -exec chmod +x {} \;
+sleep 0.5
+echo "Successfully set up reminder application system."
+EOF
+
