@@ -18,21 +18,21 @@ else
 	echo "Successfully located '$sub_reminder_dir'."
 fi
 
-#Displaying current assignment
+#Displaying current assignment history
 config_path="$sub_reminder_dir/config/config.env"
 echo "Your current assignment is: $(grep 'ASSIGNMENT=' "$config_path" )"
 sleep 0.5
 
-#Prompt for user to enter new assignment
+#Prompt for user to enter new assignment to check in reminder file
 read -p "Enter new assignment: " new_assignment
 sleep 0.5
 
-#Replacing old assignment with new assignment
+#Updating the startup.sh script with new assignment requested by user
 echo "Updating reminder system..."
 sed -i "s/^ASSIGNMENT=.*/ASSIGNMENT=\"$new_assignment\"/" "$config_path"
 sleep 0.5
 
-#Running script to check for latest updates
+#Running startup.sh script to display user's new assignment history
 echo "New assignment '$new_assignment' history displayed in submission reminder system"
 sleep 0.5
 cd "$sub_reminder_dir"
