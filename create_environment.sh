@@ -105,6 +105,8 @@ Xavi, Shell Navigation, not submitted
 Morrison, Git, not submitted
 Greg, Shell Basics, submitted
 Lorraine, Shell Navigation, not submitted
+Sash, Shell Redirections, not submitted
+Jorja, Shell Loops, not submitted
 EOF
 
 #Populating the config script
