@@ -1,13 +1,19 @@
 #!/bin/bash
 
 #Prompt for user to enter name
+echo ""
 read -p "Enter your name: " name
+echo ""
+echo ""
 echo "Creating directory..."
+echo ""
 sleep 0.5
 
 #Creation of respective directory
 mkdir -p submission_reminder_"$name"
+echo ""
 echo "Directory 'submission_reminder_"$name"' successfully created."
+echo ""
 
 #Creation of subdirectories within the student's directory
 cd submission_reminder_"$name"
@@ -16,7 +22,9 @@ mkdir -p modules
 mkdir -p assets
 mkdir -p config
 sleep 0.5
-echo "Sub-directories in 'submission_reminder_"$name"' created."
+echo ""
+echo "Creating sub-directories within 'submission_reminder "$name"'..."
+echo ""
 
 #Creation of files within the student's directory
 touch app/reminder.sh
@@ -24,12 +32,15 @@ touch modules/functions.sh
 touch assets/submissions.txt
 touch config/config.env
 touch startup.sh
-sleep 0.5
-echo "Files within sub-directories created."
+echo ""
+echo "Creating files within the sub-directories..."
+echo ""
 
 #Populating the scripts within the created files
 sleep 0.5
+echo ""
 echo "Populating files within the sub-directories..."
+echo ""
 
 #Populating the reminder script
 cat > app/reminder.sh << 'EOF'
@@ -92,7 +103,8 @@ Shabir, Shell Basics, submitted
 Zein, Shell Navigation, submitted
 Xavi, Shell Navigation, not submitted
 Morrison, Git, not submitted
-
+Greg, Shell Basics, submitted
+Lorraine, Shell Navigation, not submitted
 EOF
 
 #Populating the config script
@@ -102,20 +114,27 @@ ASSIGNMENT="Shell Navigation"
 DAYS_REMAINING=2
 
 EOF
-sleep 0.5
-echo "Successfully populated the files."
+chmod +x config/config.env
+echo ""
+echo "Successfully completed set up!"
+echo ""
+echo ""
 
 #Implementing the startup script
 chmod +x startup.sh
 cat > startup.sh << 'EOF'
 #!/bin/bash
+echo ""
+echo ""
 sleep 0.5
-echo "Setting up the reminder application system..."
-sleep 0.5
-echo "Granting files execution permissions..."
+echo "Starting up the reminder application system..."
+echo ""
 find -name "*.sh" -type f -exec chmod +x {} \;
 sleep 0.5
-echo "Successfully set up reminder application system."
+echo ""
+echo "Successfully started reminder application system."
+echo ""
+echo ""
 ./app/reminder.sh
 EOF
 
