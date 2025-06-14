@@ -33,7 +33,7 @@ sed -i "s/^ASSIGNMENT=.*/ASSIGNMENT=\"$new_assignment\"/" "$config_path"
 sleep 0.5
 
 #Running startup.sh script to display user's new assignment history
-echo "New assignment '$new_assignment' history displayed in submission reminder system"
+echo "Displaying new assignment '$new_assignment' in the submission reminder system."
 sleep 0.5
 cd "$sub_reminder_dir"
 ./startup.sh
