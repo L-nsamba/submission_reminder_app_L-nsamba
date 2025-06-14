@@ -38,8 +38,14 @@ v. Return to the main directory, run the copilot_shell_script.sh script, and fol
 ```
 vi. View the submission reminder for your requested assignment.
 
-### Project Tree
-
+### 4. Project Tree
+![Project Directory Tree](submission_reminder_tree.png)
 <br></br> 
 
 ### Video Demonstration
+<h3>📽️ Project Demo</h3>
+<p>
+  <a href="https://youtu.be/KZORAVm7QkI" target="_blank">
+    ▶️ Click here to watch the video demonstration on YouTube
+  </a>
+</p>
