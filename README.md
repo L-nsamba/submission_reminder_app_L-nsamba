@@ -20,7 +20,6 @@
 ii. Run the create_environment.sh script and follow the prompt.
 ```sh
      ./create_environment.sh
-     Enter your name:
 ```
 iii. Access your created directory.
 ```sh
@@ -30,22 +29,26 @@ iv. Run the startup.sh script in the directory and view assignment reminder disp
 ```sh
      ./startup.sh
 ```
-v. Return to the main directory, run the copilot_shell_script.sh script, and follow the prompt.
+v. Return to the main directory and run the copilot_shell_script.sh script, and follow the prompt.
 ```sh
      cd ..
      ./copilot_shell_script.sh
-     Enter new assignment:
 ```
 vi. View the submission reminder for your requested assignment.
+<br></br>
 
-### 4. Project Tree
+### 4. Project Structure and Demo 📂🎥
 ![Project Directory Tree](submission_reminder_tree.png)
-<br></br> 
-
-### Video Demonstration
-<h3>📽️ Project Demo</h3>
 <p>
   <a href="https://youtu.be/KZORAVm7QkI" target="_blank">
     ▶️ Click here to watch the video demonstration on YouTube
   </a>
 </p>
+
+<br></br> 
+
+### 5. Author 🫱🏽‍🫲🏽
+
+<br>**Leon Nsamba**👨🏽‍💻</br>
+<br>Email: l.nsamba@alustudent.com 📧</br>
+<br>GitHub: [L-nsamba](https://github.com/L-nsamba)💻</br>
