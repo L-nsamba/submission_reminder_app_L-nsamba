@@ -36,4 +36,10 @@ v. Return to the main directory, run the copilot_shell_script.sh script, and fol
      ./copilot_shell_script.sh
      Enter new assignment:
 ```
+vi. View the submission reminder for your requested assignment.
 
+### Project Tree
+
+<br></br> 
+
+### Video Demonstration
