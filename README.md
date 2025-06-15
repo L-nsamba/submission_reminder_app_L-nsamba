@@ -38,7 +38,22 @@ vi. View the submission reminder for your requested assignment.
 <br></br>
 
 ### 4. Project Structure and Demo 📂🎥
-![Project Directory Tree](submission_reminder_tree.png)
+<br>
+📁submission_reminder_app_L-nsamba/<br>
+├── 📄copilot_shell_script.sh<br>
+├── 📄create_environment.sh<br>
+├── 📄README.md<br>
+└── 📁submission_reminder_leon/<br>
+├── 📁app/<br>
+│    └── 📄reminder.sh<br>
+├── 📁assets/<br>
+│     └── 📄submissions.txt<br>
+├── 📁config/<br>
+│     └── 📄config.env<br>
+├── 📁modules/<br>
+│     └── 📄functions.sh<br>
+└── 📄startup.sh<br>
+<br></br>
 <p>
   <a href="https://youtu.be/KZORAVm7QkI" target="_blank">
     ▶️ Click here to watch the video demonstration on YouTube
