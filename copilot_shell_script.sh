@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Accessing the submission reminder directory
-sub_reminder_dir=$( find . -maxdepth 1 -type d -name "submission_reminder_*" | head -1 )
+sub_reminder_dir=$( find . -maxdepth 1 -type d -name 'submission_reminder_*' -printf '%T@ %p\n' | sort -n | tail -1 | cut -d' ' -f2- )
 
 #Error handling for condition where submission directory does not exist
 if [ -z "$sub_reminder_dir" ];then
