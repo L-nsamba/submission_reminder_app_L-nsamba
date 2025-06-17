@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Accessing the submission reminder directory
+#Accessing the latest submission reminder directory created
 sub_reminder_dir=$( find . -maxdepth 1 -type d -name 'submission_reminder_*' -printf '%T@ %p\n' | sort -n | tail -1 | cut -d' ' -f2- )
 
 #Error handling for condition where submission directory does not exist
@@ -18,7 +18,7 @@ else
 	echo "Successfully located '$sub_reminder_dir'."
 fi
 
-#Displaying current assignment history
+#Defining variable to access current assignment and displaying it
 config_path="$sub_reminder_dir/config/config.env"
 echo "Your current assignment is: $(grep 'ASSIGNMENT=' "$config_path" )"
 sleep 0.5
