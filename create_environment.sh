@@ -23,7 +23,7 @@ mkdir -p assets
 mkdir -p config
 sleep 0.5
 echo ""
-echo "Creating sub-directories within 'submission_reminder "$name"'..."
+echo "Creating sub-directories within 'submission_reminder_"$name"'..."
 echo ""
 
 #Creation of files within the student's directory
@@ -123,7 +123,6 @@ echo ""
 echo ""
 
 #Implementing the startup script
-chmod +x startup.sh
 cat > startup.sh << 'EOF'
 #!/bin/bash
 echo ""
@@ -139,4 +138,4 @@ echo ""
 echo ""
 ./app/reminder.sh
 EOF
-
+chmod +x startup.sh
